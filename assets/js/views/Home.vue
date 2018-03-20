@@ -7,7 +7,7 @@
     Count: <span style="font-size: 50px">{{ $store.state.count }}</span>, count is <span style='font-size:50px'>{{ $store.getters.evenOrOdd  }}</span>
     <div class="btn-group btn-group-justified" role="group">
       <div class="btn-group" role="group">
-        <button type="button" class="btn btn-default" @click="$store.dispatch('assyncIncrByAmount',{ amount:10 })">+</button>
+        <button type="button" class="btn btn-default" @click="$store.dispatch('asyncIncrByAmount',{ amount:10 })">+</button>
       </div>
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-default" @click="$store.dispatch('asyncIncrByAmount',{ amount:-10  })">-</button>
